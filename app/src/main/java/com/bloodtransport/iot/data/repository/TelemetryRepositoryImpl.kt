@@ -4,14 +4,18 @@ import android.util.Log
 import com.bloodtransport.iot.data.config.SupabaseConfig
 import com.bloodtransport.iot.data.model.TelemetryLog
 import com.bloodtransport.iot.data.remote.SupabaseProvider
-import io.github.jan.tennert.supabase.postgrest.from
-import io.github.jan.tennert.supabase.postgrest.query.Order
+
+// CORRECTED SUPABASE IMPORTS (Removed ".tennert")
+import io.github.jan.supabase.postgrest.from
 import io.github.jan.supabase.postgrest.postgrest
-import io.github.jan.tennert.supabase.realtime.PostgresAction
-import io.github.jan.tennert.supabase.realtime.channel
-import io.github.jan.tennert.supabase.realtime.decodeRecord
-import io.github.jan.tennert.supabase.realtime.postgresChangeFlow
-import io.github.jan.tennert.supabase.realtime.realtime
+import io.github.jan.supabase.postgrest.query.Order
+import io.github.jan.supabase.realtime.PostgresAction
+import io.github.jan.supabase.realtime.channel
+import io.github.jan.supabase.realtime.decodeRecord
+import io.github.jan.supabase.realtime.postgresChangeFlow
+import io.github.jan.supabase.realtime.realtime
+
+// STANDARD KOTLIN & COROUTINE IMPORTS
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
