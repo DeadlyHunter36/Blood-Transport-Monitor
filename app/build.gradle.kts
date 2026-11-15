@@ -72,26 +72,23 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")
     implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.7")
 
-    // Kotlin Coroutines
+    // Kotlin Coroutines & Serialization
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.9.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
-
-    // Kotlinx Serialization JSON
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
 
-    // DOWNGRADE TO SUPABASE V2.5.0 TO MATCH GENERATED CODE
-    val supabaseVersion = "2.5.0"
+    // CORRECT SUPABASE V3 DEPENDENCIES
+    val supabaseVersion = "3.0.3"
     implementation(platform("io.github.jan-tennert.supabase:bom:$supabaseVersion"))
     implementation("io.github.jan-tennert.supabase:postgrest-kt")
     implementation("io.github.jan-tennert.supabase:realtime-kt")
 
-    // DOWNGRADE TO KTOR V2 (Required for Supabase 2.5.0)
-    val ktorVersion = "2.3.11"
+    // CORRECT KTOR V3 DEPENDENCIES
+    val ktorVersion = "3.0.1"
     implementation("io.ktor:ktor-client-android:$ktorVersion")
     implementation("io.ktor:ktor-client-core:$ktorVersion")
     implementation("io.ktor:ktor-client-websockets:$ktorVersion")
 
-    // Compose Tooling & Tests
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 }
