@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Blood Transport Monitor</string>
+    <string name="trip_id_label">Trip ID</string>
+    <string name="battery_label">Battery</string>
+    <string name="signal_label">Signal</string>
+    <string name="complete_trip">Complete Trip</string>
+    <string name="pin_prompt">Enter Custodian 4-Digit PIN</string>
+</resources>
