@@ -79,14 +79,14 @@ dependencies {
     // Kotlinx Serialization JSON
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
 
-    // Supabase Kotlin SDK (Postgrest + Realtime)
-    val supabaseVersion = "3.0.3"
+    // DOWNGRADE TO SUPABASE V2.5.0 TO MATCH GENERATED CODE
+    val supabaseVersion = "2.5.0"
     implementation(platform("io.github.jan-tennert.supabase:bom:$supabaseVersion"))
     implementation("io.github.jan-tennert.supabase:postgrest-kt")
     implementation("io.github.jan-tennert.supabase:realtime-kt")
 
-    // Ktor Android Engine (Required for Supabase SDK & WebSockets)
-    val ktorVersion = "3.0.1"
+    // DOWNGRADE TO KTOR V2 (Required for Supabase 2.5.0)
+    val ktorVersion = "2.3.11"
     implementation("io.ktor:ktor-client-android:$ktorVersion")
     implementation("io.ktor:ktor-client-core:$ktorVersion")
     implementation("io.ktor:ktor-client-websockets:$ktorVersion")
