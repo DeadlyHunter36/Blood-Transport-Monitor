@@ -94,8 +94,4 @@ dependencies {
     // Compose Tooling & Tests
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
-
-    implementation("io.github.jan-tennert.supabase:postgrest-kt:2.5.0")
-    implementation("io.github.jan-tennert.supabase:realtime-kt:2.5.0")
-    implementation("io.ktor:ktor-client-okhttp:2.3.11")
 }
