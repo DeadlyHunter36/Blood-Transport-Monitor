@@ -10,6 +10,8 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
+      - name: Generate missing Gradle Wrapper
+        run: gradle wrapper
       - name: Make gradlew executable
         run: chmod +x ./gradlew
       - name: Build with Gradle
