@@ -1,10 +1,10 @@
 package com.bloodtransport.iot.data.remote
 
 import com.bloodtransport.iot.data.config.SupabaseConfig
-import io.github.jan.tennert.supabase.SupabaseClient
-import io.github.jan.tennert.supabase.createSupabaseClient
-import io.github.jan.tennert.supabase.postgrest.Postgrest
-import io.github.jan.tennert.supabase.realtime.Realtime
+import io.github.jan.supabase.SupabaseClient
+import io.github.jan.supabase.createSupabaseClient
+import io.github.jan.supabase.postgrest.Postgrest
+import io.github.jan.supabase.realtime.Realtime
 import kotlin.time.Duration.Companion.seconds
 
 /**
