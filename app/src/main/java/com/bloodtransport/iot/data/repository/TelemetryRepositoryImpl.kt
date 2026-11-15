@@ -6,6 +6,7 @@ import com.bloodtransport.iot.data.model.TelemetryLog
 import com.bloodtransport.iot.data.remote.SupabaseProvider
 import io.github.jan.tennert.supabase.postgrest.from
 import io.github.jan.tennert.supabase.postgrest.query.Order
+import io.github.jan.supabase.postgrest.postgrest
 import io.github.jan.tennert.supabase.realtime.PostgresAction
 import io.github.jan.tennert.supabase.realtime.channel
 import io.github.jan.tennert.supabase.realtime.decodeRecord
